@@ -1,4 +1,4 @@
-const canvas = document.querySelector("canvas");
+const canvas = document.querySelector(".canvas");
 toolBtns = document.querySelectorAll(".tool"),
 fillColor = document.querySelector("#fill-color"),
 sizeSlider = document.querySelector("#size-slider"),
@@ -126,7 +126,6 @@ saveImg.addEventListener("click",() => {
  link.href = canvas.toDataURL (); //  passing canvasData as link href value
  link.click(); // clicking link to download image
 });
-
 
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
